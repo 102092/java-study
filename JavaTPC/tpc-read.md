@@ -315,7 +315,7 @@
 
 # TPC-part 2
 
-### 수평적구조, 수직적구조
+## 수평적구조, 수직적구조
 
 ![image-20191117212230489](tpc-read.assets/image-20191117212230489.png)
 
@@ -335,7 +335,7 @@
 
 - 상속은 소유의 관계가 아님. 부모가 물려줬다고 온전히 자식것이 되는 것이 아니다.
 
-### 오버라이드(Override)
+## 오버라이드(Override)
 
 ![image-20191117215305778](tpc-read.assets/image-20191117215305778.png)
 
@@ -372,7 +372,7 @@
 
 
 
-### 형변환
+## 형변환
 
 ![image-20191118222021764](tpc-read.assets/image-20191118222021764.png)
 
@@ -385,7 +385,7 @@
 
 
 
-### 다형성
+## 다형성
 
 ![image-20191118223342123](tpc-read.assets/image-20191118223342123.png)
 
@@ -421,4 +421,134 @@ if(ani[i] instanceof Cat) {
     ..// ani[i] 가 Cat으로 부터 생성된 인스턴스 라면
 }
 ```
+
+
+
+## 추상클래스
+
+![image-20191120232853087](tpc-read.assets/image-20191120232853087.png)
+
+- 다형성이 보장되어야 함. 어떻게? Override가 되어있어야함. 즉 부모에서 있는 특징은 자식이 재정의해야함.
+- 그렇지만 **추상클래스**를  사용하면 다형성이 **일부** 보장된다.
+
+- 추상클래스(<u>abstract</u>) 는 구현부가 없다.
+
+  ````java
+  public abstract class Animal {
+      public abstract void eat();
+  }
+  ````
+
+- abstract 클래스는 불완전한 클래스. 추상 클래스는 객체를 생성할 수 없음.
+
+  - 그러므로 반드시 자식하고 연결되어야 제 역할을 할 수 있다.
+
+- 추상 클래스는 <u>서로 기능이 비슷한 클래스</u>를 묶을 때 사용한다
+- `extends`
+
+
+
+## 인터페이스
+
+![image-20191120235004352](tpc-read.assets/image-20191120235004352.png)
+
+- 100% 보장? 상위클래스에서 정의한 메서드는 반드시 하위 클래스에서 구현해야한다.
+- 인터페이스는 서로 기능이 다른 클래스를 묶을 때 사용
+  - TV, Radio 클래스는 서로 다른 기능을 가지고 있을 것
+
+- 인터페이스는 아무 기능이 없음.
+  - 인터페이스가 가지고 있는 불완전한 키워드를 구현하는 것 `implements` 
+
+- 인터페이스가 부모다? 모든 자식들이 인터페이스에게 통제 당할 것
+  - 즉 부모가 명령을 내렸을 때, 자식이 무조건 반응할것.
+  - 이 말은 <u>다형성을 100% 보장</u>한다는 말과 동일하다
+
+
+
+```java
+public interface RemoCon{
+    //추상 메서드
+    public void chUp(); //abstract 가 숨겨져 있음 == public abstract void chUp(); 과 동일함
+    public void chDown(); 
+    public void internet();
+    
+    //상수
+    int MAXCH = 100; // public static final int MAXCH = 100; 과 같음
+    int MINCH = 1;
+}
+
+public class TV implements RemoCon{
+    @Override
+    public void chUp(){
+        System.out.println("TV 채널 업")
+    }
+    .....//나머지 chDown, internet도 구현됨
+}
+
+public class Radio implements RemoCon{
+    @Override
+    public void chUp(){
+        System.out.println("Radio 채널 업")
+    }
+     .....//나머지 chDown, internet도 구현됨
+}
+```
+
+- 인터페이스는 객체 생성 못함.
+- 추상클래스, 인터페이스 공통점
+  - 다형성을 보장하기 위한 방법
+
+- 인터페이스에서는 **상수를** 둘수 있음
+
+  `int MAXCH = 100;`  이건 `RemoCon.MAXCH`로 접근할 수 있음
+
+
+
+## 추상클래스, 인터페이스
+
+![image-20191121000721533](tpc-read.assets/image-20191121000721533.png)
+
+- 공통점
+  - 객체로 생성 못함.
+  - 하위 클래스로 인해 만들어져야함
+  - 부모의 역할을 함
+
+- 추상클래스
+  - 서로 기능이 비슷한 클래스의 공통 부분을 묶을 때 사용
+  - 구현, 추상 메서드를 **함께** 가질 수 있음.
+  - 구현 메서드를 가질 수 있음.
+  - 단일 상속
+- 인터페이스
+  - 서로 기능이 다른 클래스의 공통 부분을 묶을 때 사용
+  - 100% **추상 메서드** 로만 이루어짐.
+  - final static 멤버 변수 == 상수를 가질 수 있음.
+  - <u>다중 상속 지원</u>
+    - cf 자바는 기본 단일 상속 지원
+
+
+
+## 인터페이스, JDBC 관계
+
+![image-20191121001924348](tpc-read.assets/image-20191121001924348.png)
+
+- 인터페이스 : 룰
+- Java.sql * 인터페이스 --> 밴더사들이 가져가서, 구현 클래스를 만듬. 이러한 클래스를 Drvier 클래스라 말함
+
+- 접속 구현까지는 모르지만 --- 핵심
+- 우리는 인터페이스를 알고 있으니까. 어디 Driver든 사용할 수 있도록 해준다 == 매직!
+
+
+
+## 인터페이스 상속 관계
+
+![image-20191121003520085](tpc-read.assets/image-20191121003520085.png)
+
+- X 입장에서는 A,B 모두 부모다.
+- 그러므로 타입을 A,B모두 만들 수 있음
+- `Public class Dog extends Animal implements Pet, Robots`
+  - Animal을 상속받고, Pet과 Robots 모양을 구현했다고 말할 수 있다.
+  - 추상 클래스는 하나만 상속 받고,
+  - 인터페이스는 여러개 구현 할 수 있음.
+
+
 
