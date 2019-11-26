@@ -1,5 +1,7 @@
 # java-study
 
+
+
 ## 목표
 
 1. 기본 복습
@@ -7,6 +9,12 @@
 3. 이유 집중.
 
 
+
+## 교재
+
+- JavaTPC 1,2부
+- Java Design Pattern
+- 자바의 정석
 
 
 

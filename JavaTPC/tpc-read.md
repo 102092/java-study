@@ -19,7 +19,7 @@
   - 그러다가 실행명령어 123.exe가 오면 메모리에 올려서 실행함.
 
 - 여러 운영체제가 있는 만큼 , 특정 운영체제에 종속되도록 컴파일 하면 안되겠지.
-- 그래서 class file을 만들고(공통적으로,byte코드로)
+- 그래서 class file을 만들고(<u>공통적으로,byte코드로</u>)
 - 실행하라는 명령이 떨어지면, 위 class 파일을 가져가서, JVM이 해당 운영체제에 맞게 2차 컴파일을 함.
 - 그러면 다른 언어에 비해서는 **속도가 좀 느리겠네**?
 
@@ -611,7 +611,7 @@ public class Radio implements RemoCon{
 - 기능이 비슷한 클래스를 모아가지고, 관리를 쉽게하기 위해서 패키지를 씀.
 
 - 클래스들 끼리 이름이 같을 수 있음. 어떻게 해야할까? 
-  - 구분자를 하나 더 둔다. == 패키지
+  - <u>구분자를 하나 더 둔다. == 패키지</u>
 
 - 어떤 클래스에 접근하기 위해서는, **클래스 풀 네임**(패캐지를 포함한 이름)을  알아야함
   - 접근 권한을 Public으로 해야함,
@@ -648,3 +648,94 @@ public class Radio implements RemoCon{
 - `" "` 묶어있으면 객체로 생성. 어디에? 
   - **Literal Poo**l에 생성. 이 영역의 특징은 재 사용이 가능하다.
 
+
+
+## API
+
+![image-20191126202821110](tpc-read.assets/image-20191126202821110.png)
+
+- 배열은 연속적으로 메모리 구조가 만들어진다.
+- 배열처럼 동작하는 클래스(API)를 만든다.
+- 모든 API 를 다 숙지할 수는 없다.
+  - 우리에게 필요한 기능을 가진 API를 만들어서 이용하면 편할 것.
+
+- `ArrayList`
+  - API
+
+
+
+## ArrayList
+
+![image-20191126204407134](tpc-read.assets/image-20191126204407134.png)
+
+- **API**
+- Object 배열
+  - 왜? 모든 타입의 객체를 저장할 수 있도록
+
+- 길이의 제한이 없음.
+  - 왜? 설정된 길이 이상이되면, 자동으로 용량이 늘어나도록 설정됨.
+  - 즉 사용자가 신경쓸 필요없음.
+
+- `Instanceof` : 객체끼리 비교할때
+- Object가 나오면 업캐스팅, 다운캐스팅 유의하자.
+- `Generic.. < >`
+
+- `ArrayList` from java.util.*....
+
+
+
+- 실습
+
+![image-20191126205843605](tpc-read.assets/image-20191126205843605.png)
+
+- <u>사이즈 설정해놓지 않으면 기본 10</u> 
+- 설정된 길이를 넘을 때 마다, 자동적으로 늘어나는 만큼 길이의 제약이 없다는 점이 큰 장점이다.
+
+
+
+## Wrapper 클래스
+
+![image-20191126211053360](tpc-read.assets/image-20191126211053360.png)
+
+- **포장** 클래스
+  - 즉 뭔가를 감싼다.
+  - 기본 자료형을 **객체 자료형으로** 사용할 수 있도록 감싼다
+
+- Object(부모) Integer(int 자료형, 자식)
+
+- 포장을 어떻게 제거할까?
+
+  ```java
+  Integer a = new Integer(1); // wrapper class
+  
+  int b = a.intValue(); // 포장을 제거
+  int c = a.toString();
+  int c = a.parseInt(); 
+  ```
+
+  
+
+- 박싱, 언박싱 boxing, unboxing
+
+  - wrapper클래스 변환을 컴파일러가 자동으로 해주는 것.
+  - Boxing
+
+  ```java
+  Integer b = 1;
+  
+  Obejct[] obj = new Object[3];
+  obj[0] = 1;
+  obj[1] = 2;
+  obj[2] = 3;
+  ```
+
+  - Unboxing
+
+  ```java
+  int b = new Integer(10);
+  ```
+
+  - 왜 이게 가능하지?
+    - <u>컴파일러가 자동으로 해준다</u>.
+
+- `.parseInt()`  == static method
