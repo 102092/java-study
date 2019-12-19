@@ -3,9 +3,6 @@ package echo;
 import java.net.*;
 import java.io.*;
 
-/**
- * Server
- */
 public class Server {
 
     public static void main(String[] args) {

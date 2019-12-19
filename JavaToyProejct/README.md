@@ -63,3 +63,12 @@
 - 한글은 byte stream
   - 깨지지 않기 위해서 `readUTF()` 메서드를 사용한다.
 
+### Muti_Chatting 
+
+![](https://media.giphy.com/media/ZBbv4U8dmBrce9O7Wt/giphy.gif)
+
+- `Collections.synchronizedMap()`
+  - `Clients name` 과 `out` 을 저장하는 `Map` 에서 **thread safe**하게 만들기 위해 사용
+
+
+
