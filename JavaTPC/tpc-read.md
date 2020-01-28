@@ -129,7 +129,7 @@
   
   - method, stack, heap, literal
   
-- stack : FILO
+- stack : **FILO**
 
 - Main method는 static 키워드가 반드시 있어야, 메모리에 먼저 로딩이 됨.
 
