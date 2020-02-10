@@ -21,20 +21,6 @@ public class StringCalculator {
         return numbers;
     }
 
-    private static int[] toInts(String[] values) {
-        int[] result = new int[values.length];
-        for (int i = 0; i < values.length; i++) {
-            result[i] = toInt(values[i]);
-        }
-        return result;
-    }
-
-    private static int toInt(String value) {
-        int number = Integer.parseInt(value);
-        if (number < 0) throw new RuntimeException();
-        return number;
-    }
-
     private static int sum(Positive[] numbers) {
         Positive result = new Positive(0);
         for (Positive number : numbers) {
