@@ -127,7 +127,7 @@
 
 - JVM이 사용하는 4가지 메모리 영역이 있음. 
   
-  - method, stack, heap, literal
+  - *method, stack, heap, literal*
   
 - stack : **FILO**
 
