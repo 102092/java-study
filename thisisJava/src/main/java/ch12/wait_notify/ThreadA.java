@@ -1,16 +1,17 @@
 package ch12.wait_notify;
 
 public class ThreadA extends Thread {
-    private WorkObject workObject;
 
-    public ThreadA(WorkObject workObject) {
-        this.workObject = workObject;
-    }
+  private WorkObject workObject;
 
-    @Override
-    public void run() {
-        for (int i = 0; i < 10; i++) {
-            workObject.methodA();
-        }
+  public ThreadA(WorkObject workObject) {
+    this.workObject = workObject;
+  }
+
+  @Override
+  public void run() {
+    for (int i = 0; i < 10; i++) {
+      workObject.methodA();
     }
+  }
 }

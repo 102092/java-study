@@ -2,19 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cd04a60-7866-449a-8bce-953e8e62e648" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/boundedType/BoundTypeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/boundedType/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/BoxMethodExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Compare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/CompareExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/HighStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/WildCardExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/NoArgNoReturn/FunctionalExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/NoArgNoReturn/MyFunctionalInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/field/MyFunctional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/field/UsingThis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/field/UsingThisExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/methodReference/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/methodReference/MethodReferenceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/aggregate/AggregateExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/middleStream/AsDoubleStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/streamMatch/MatchExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/streamSorting/SortingExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/blocking/NoResultExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/blocking/NoResultExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/daemon/AutoSaveThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/daemon/AutoSaveThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/daemon/DaemonExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/daemon/DaemonExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/join/JoinExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/join/JoinExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/join/SumThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/join/SumThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/priority/CalcThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/priority/CalcThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/priority/PriorityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/priority/PriorityExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/state/StatePrintThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/state/StatePrintThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/state/TargetThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/state/TargetThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/state/ThreadStateExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/state/ThreadStateExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadNameExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadNameExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/MainThreadExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/MainThreadExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WaitNotifyExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WaitNotifyExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WorkObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WorkObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/yield/YieldExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/yield/YieldExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -48,7 +115,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -57,14 +124,17 @@
       <recent name="ch12.unsynchronized" />
       <recent name="ch12" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ch13.genericMethod" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.NoResultExample">
-    <configuration name="DaemonExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch12.daemon.DaemonExample" />
+  <component name="RunManager" selected="Application.AggregateExample">
+    <configuration name="AggregateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch16.aggregate.AggregateExample" />
       <module name="thisisJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch12.daemon.*" />
+          <option name="PATTERN" value="ch16.aggregate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch12.join.JoinExample" />
+    <configuration name="AsDoubleStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch16.middleStream.AsDoubleStream" />
       <module name="thisisJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch12.join.*" />
+          <option name="PATTERN" value="ch16.middleStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoResultExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch12.blocking.NoResultExample" />
+    <configuration name="MatchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch16.streamMatch.MatchExample" />
       <module name="thisisJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch12.blocking.*" />
+          <option name="PATTERN" value="ch16.streamMatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +168,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaitNotifyExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch12.wait_notify.WaitNotifyExample" />
+    <configuration name="MethodReferenceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.methodReference.MethodReferenceExample" />
       <module name="thisisJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch12.wait_notify.*" />
+          <option name="PATTERN" value="ch14.methodReference.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YieldExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ch12.yield.YieldExample" />
+    <configuration name="SortingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch16.streamSorting.SortingExample" />
       <module name="thisisJava.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ch12.yield.*" />
+          <option name="PATTERN" value="ch16.streamSorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NoResultExample" />
-        <item itemvalue="Application.DaemonExample" />
-        <item itemvalue="Application.WaitNotifyExample" />
-        <item itemvalue="Application.JoinExample" />
-        <item itemvalue="Application.YieldExample" />
+        <item itemvalue="Application.AggregateExample" />
+        <item itemvalue="Application.MatchExample" />
+        <item itemvalue="Application.SortingExample" />
+        <item itemvalue="Application.AsDoubleStream" />
+        <item itemvalue="Application.MethodReferenceExample" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +221,10 @@
       <workItem from="1580907428181" duration="319000" />
       <workItem from="1580908147275" duration="1081000" />
       <workItem from="1581385089541" duration="410000" />
+      <workItem from="1581471271044" duration="4155000" />
+      <workItem from="1581478416718" duration="1436000" />
+      <workItem from="1581558535077" duration="320000" />
+      <workItem from="1581559822988" duration="2015000" />
     </task>
     <servers />
   </component>
@@ -165,38 +239,42 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="640" y="127" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1581385391285" />
-    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1580908195205">
+    <state x="640" y="129" key="#Template" timestamp="1581475488894">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1580908195205" />
+    <state x="640" y="129" key="#Template/0.23.1440.877@0.23.1440.877" timestamp="1581475488894" />
+    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1581475738848">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1581475738848" />
     <state x="557" y="62" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1580734305405">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="557" y="62" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580734305405" />
-    <state width="678" height="392" key="GridCell.Tab.0.bottom" timestamp="1580910339920">
+    <state width="678" height="387" key="GridCell.Tab.0.bottom" timestamp="1581565979125">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="392" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1580910339920" />
-    <state width="678" height="392" key="GridCell.Tab.0.center" timestamp="1580910339919">
+    <state width="678" height="387" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581565979125" />
+    <state width="678" height="387" key="GridCell.Tab.0.center" timestamp="1581565979124">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="392" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1580910339919" />
-    <state width="678" height="392" key="GridCell.Tab.0.left" timestamp="1580910339919">
+    <state width="678" height="387" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1581565979124" />
+    <state width="678" height="387" key="GridCell.Tab.0.left" timestamp="1581565979124">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="392" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1580910339919" />
-    <state width="678" height="392" key="GridCell.Tab.0.right" timestamp="1580910339920">
+    <state width="678" height="387" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1581565979124" />
+    <state width="678" height="387" key="GridCell.Tab.0.right" timestamp="1581565979124">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="392" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1580910339920" />
-    <state x="443" y="100" key="SettingsEditor" timestamp="1581385402090">
+    <state width="678" height="387" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1581565979124" />
+    <state x="443" y="100" key="SettingsEditor" timestamp="1581473764333">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="443" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1581385402090" />
-    <state x="728" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1580908149096">
+    <state x="443" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1581473764333" />
+    <state x="728" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1581559823996">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="728" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1580908149096" />
+    <state x="728" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1581559823996" />
     <state x="818" y="226" key="extract.method.dialog" timestamp="1580734065210">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -205,6 +283,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="194" y="31" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1580733842330" />
+    <state x="842" y="85" key="refactoring.ChangeSignatureDialog" timestamp="1581566457689">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="842" y="85" key="refactoring.ChangeSignatureDialog/0.23.1440.877@0.23.1440.877" timestamp="1581566457689" />
+    <state x="745" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1581478743056">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="745" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1581478743056" />
     <state x="810" y="380" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1580910124915">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
