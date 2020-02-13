@@ -1,69 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cd04a60-7866-449a-8bce-953e8e62e648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/boundedType/BoundTypeExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/boundedType/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/BoxMethodExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Compare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/CompareExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/genericMethod/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/HighStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/WildCardExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch13/wildcard/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/NoArgNoReturn/FunctionalExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/NoArgNoReturn/MyFunctionalInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/field/MyFunctional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/field/UsingThis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/field/UsingThisExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/methodReference/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch14/methodReference/MethodReferenceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/aggregate/AggregateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/middleStream/AsDoubleStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/streamMatch/MatchExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ch16/streamSorting/SortingExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/blocking/NoResultExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/blocking/NoResultExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepPrintExample3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/createThread/BeepThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/daemon/AutoSaveThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/daemon/AutoSaveThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/daemon/DaemonExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/daemon/DaemonExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/join/JoinExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/join/JoinExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/join/SumThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/join/SumThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/priority/CalcThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/priority/CalcThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/priority/PriorityExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/priority/PriorityExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/state/StatePrintThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/state/StatePrintThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/state/TargetThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/state/TargetThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/state/ThreadStateExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/state/ThreadStateExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadNameExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/threadName/ThreadNameExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/MainThreadExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/MainThreadExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/unsynchronized/User2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/ThreadB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WaitNotifyExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WaitNotifyExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WorkObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/wait_notify/WorkObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/yield/ThreadB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ch12/yield/YieldExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch12/yield/YieldExample.java" afterDir="false" />
-    </list>
+    <list default="true" id="5cd04a60-7866-449a-8bce-953e8e62e648" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +162,7 @@
       <workItem from="1581471271044" duration="4155000" />
       <workItem from="1581478416718" duration="1436000" />
       <workItem from="1581558535077" duration="320000" />
-      <workItem from="1581559822988" duration="2015000" />
+      <workItem from="1581559822988" duration="2183000" />
     </task>
     <servers />
   </component>
@@ -251,22 +189,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="557" y="62" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580734305405" />
-    <state width="678" height="387" key="GridCell.Tab.0.bottom" timestamp="1581565979125">
+    <state width="678" height="387" key="GridCell.Tab.0.bottom" timestamp="1581570622538">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="387" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581565979125" />
-    <state width="678" height="387" key="GridCell.Tab.0.center" timestamp="1581565979124">
+    <state width="678" height="387" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1581570622538" />
+    <state width="678" height="387" key="GridCell.Tab.0.center" timestamp="1581570622538">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="387" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1581565979124" />
-    <state width="678" height="387" key="GridCell.Tab.0.left" timestamp="1581565979124">
+    <state width="678" height="387" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1581570622538" />
+    <state width="678" height="387" key="GridCell.Tab.0.left" timestamp="1581570622537">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="387" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1581565979124" />
-    <state width="678" height="387" key="GridCell.Tab.0.right" timestamp="1581565979124">
+    <state width="678" height="387" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1581570622537" />
+    <state width="678" height="387" key="GridCell.Tab.0.right" timestamp="1581570622538">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="678" height="387" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1581565979124" />
+    <state width="678" height="387" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1581570622538" />
     <state x="443" y="100" key="SettingsEditor" timestamp="1581473764333">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

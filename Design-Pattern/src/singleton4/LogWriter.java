@@ -5,36 +5,36 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class LogWriter {
-    private static LogWriter singleton = new LogWriter();
-    private static BufferedWriter bw;
 
-    private LogWriter() {
-        try {
-            bw = new BufferedWriter(new FileWriter("log.txt"));
-        } catch (Exception e) {
-        }
-    }
+  private static LogWriter singleton = new LogWriter();
+  private static BufferedWriter bw;
 
-    public static LogWriter getInstance() {
-        return singleton;
+  private LogWriter() {
+    try {
+      bw = new BufferedWriter(new FileWriter("log.txt"));
+    } catch (Exception e) {
     }
+  }
 
-    public synchronized void log(String str) {
-        try {
-            bw.write(str + "\n");
-            bw.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+  public static LogWriter getInstance() {
+    return singleton;
+  }
 
-    @Override
-    protected void finalize() {
-        try {
-            super.finalize();
-            bw.close();
-        } catch (Throwable ex) {
-        }
-        ;
+  public synchronized void log(String str) {
+    try {
+      bw.write(str + "\n");
+      bw.flush();
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+  }
+
+  @Override
+  protected void finalize() {
+    try {
+      super.finalize();
+      bw.close();
+    } catch (Throwable ex) {
+    }
+  }
 }
