@@ -22,15 +22,19 @@ public class Lambda {
     new Thread(() -> System.out.println("Hello from thread")).start();
   }
 
+  public static int sumOfConditional(List<Integer> numbers, Conditional conditional) {
+    return numbers.stream().filter(conditional::test).reduce(0, (x, y) -> x + y);
+  }
+
   public static int sumAll(List<Integer> numbers) {
-    return numbers.stream().reduce(0, (x, y) -> x + y);
+    return sumOfConditional(numbers, x -> true);
   }
 
   public static int sumAllEven(List<Integer> numbers) {
-    return numbers.stream().filter(x -> x % 2 == 0).reduce(0, (x, y) -> x + y);
+    return sumOfConditional(numbers, x -> x % 2 == 0);
   }
 
   public static int sumAllOverThree(List<Integer> numbers) {
-    return numbers.stream().filter(x -> x > 3).reduce(0, (x, y) -> x + y);
+    return sumOfConditional(numbers, x -> x > 3);
   }
 }
