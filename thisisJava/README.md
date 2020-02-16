@@ -502,8 +502,9 @@ public <T extends Number> int compare(T t1, T t2){
   - 이렇게 진행되는 값은 `Optional` 클래스로 받음.
 
 - reduce()
-  - 개발자가 뭔가 특정 집계 결과물을 만들 수있게 지원해주는 메서드
-
+  
+- 개발자가 뭔가 특정 집계 결과물을 만들 수있게 지원해주는 메서드
+  
 - collect() -- 수집
 
   - 스트림에 속한 요소들을 그룹핑하는 것
@@ -558,18 +559,136 @@ public <T extends Number> int compare(T t1, T t2){
   - 왜? 요소의 수, 어떤 스트림을 사용하는지, 해당 컴퓨터의 코어는 얼마나 되는지에 따라 영향을 받을 수 있음.
   - 스레드를 새로 생성하는 것은, 혹은 스레드 풀을 생성하는 것은 꽤 많은 컴퓨터의 자원을 소모하는 일임.
 
+## ch17
+
+- AWT
+  - Abstract Window Toolkit
+- Swing
+  - 모든 운영체제에서 동일한 UI를 갖도록
+  - AWT를 개선함.
+  - 별로 많이 사용 안됨
+  - 왜? 컴퓨터의 리소스를 많이 소모해서.
+
+- Java FX
+
+  - Swing을 개선
+  - Swing은 자바 코드로 모두 개발해야 하는 반면, FX는 기능(레이아웃, 스타일, 애플리케이션 로직)을 분리개발함.
+
+  
+
 
 
 ## ch18
 
 - I/O
+  
   - Input, Output
-
-![](https://lh3.googleusercontent.com/proxy/v-Q8Kz5T7BBMWZEsZKd9GGlSkbiSdksog4Fd56OytwpVMLYmH6vmeWABUvKIT892UN9TujxA6R2C_pQrgw)
+  
+  ![](https://lh3.googleusercontent.com/proxy/7OwdaGvVJBNmGjH9Dx_zPKAZAbFrySvUxSlPj2E9pe_pyNwTaY8DB9mVAMsNXsooq0tiOGAGD7HQl_mZkQ)
 
 - `InputStream` 은 추상 클래스.
   - 즉 객체를 생성할 수 없음.
   - `read()` 더 이상 읽을 것이 없으면 -1 을 리턴함.
-
+- 키보드로부터 읽는 것은 아스키 코드.
 - `OutputStream` 은 추상 클래스
-  - 
+- `flush() ` 버퍼를 모두 비운다
+  - 무언가 받거나, 쓰는 작업을 하면 사용한 버퍼를 비워주는 것이 좋음.
+  - 그리고 해당 객체를 닫아주는 자원을 회수해주는 작업이 필요.
+
+- 아스키 코드
+
+  ![](https://t1.daumcdn.net/cfile/tistory/01539150511C961520)
+
+- Scanner 클래스는 *문자열 외의 기본형 타입의 값도 읽을 수 있음.*
+  - 다만 성능상 별로임. buffered..이런 종류의 애들보다는.
+
+
+
+#### 파일 입출력
+
+- 디렉토리도 생성,삭제하는 등의 관리하는 기능도 가지고 있음.
+
+- 디렉토리 안에 있는 파일 리스트 값도 받아올수 있고.
+
+- 영어리는 1byte, 한글은 2byte
+
+- PrintStream은 OutputStream의 하위 스트림.
+
+- 97은 == a
+
+  ```java
+  byte b = 97;
+  os.write(b);  //a가 출력됨.
+  os.flush();
+  ```
+
+- 개행문자 == 줄바꿈문자 `\r\n` 
+
+
+
+#### 보조스트림
+
+- 다른 스트림과 연결, 여러 기능들을 제공함.
+
+- 문자를 받거나, 출력할 때는, 바이트 기반 스트림 보다는 문자기반 스트림을 사용하는 것이 더 유리하고 편함.
+
+- Inputstream to `Reader` to 문자를 읽게 해줌.
+
+  - 리더는 바이트로 들어온 input을 변환시켜줌.
+
+  ```java
+  InputStream is = System.in;
+  Reader reader = new InputStreamReader(is);
+  
+  FileInputStream fis = new FileInputStream(...);
+  Reader reader = new InputStreamReader(fis);
+  ```
+
+  
+
+- Buffer를 이용한 스트림 활용.
+
+  - 프로그램이 입출력 소스와 직접 소통하지 않고, `버퍼` 를 두어서, 좀 더 안정적으로 그리고 빠르게 데이터를 전송하고, 전송받는 방법.
+  - 왜 이걸 사용?
+    - 프로그램은 쓰기 속도가 향상되고,
+    - 버퍼가 다 차면, 데이터를 **한번에** 보내주니까, 출력횟수가 줄어듬 == 과부하가 덜됨.
+
+  ```java
+  InputStream is = System.in;
+  Reader reader = new InputStreamReader(is);
+  BufferedReader br = new BufferedReader(reader);
+  ```
+
+  - 각각 스트림을 연결하여서 input 기능을 수행하고 있음.
+
+
+
+- 객체 입출력 보조 스트림
+
+  - 객체를 파일, 네트워크로 입출력할 수 있는 기능.
+
+  ```java
+  ObjectInputStream ois = new ObjectInputStream(바이트 입력 스트림);
+  ObjectOutputStream oos = new ObjectOutputStream(바이트 출력 스트림);
+  oos.writeObject(객체);
+  
+  ```
+
+  - 직렬화? 객체를 바이트 배열로 만드는 작업을 만듬.
+  - 역직렬화 ? 바이트 배열을 객체로 만드는 작업
+
+- 직렬화가 가능한 클래스?
+
+  - Serializable interface를 구현한 클래스만 직렬화 할 수 있음.
+
+  - transient 키워드가 붙은 필드는 직렬화에서 제외된다.
+
+  - serial/VersionUID 
+
+    - 왜 사용?
+    - 직렬화 된 객체를 역직렬화 할때는, 직렬화 했을 때와 같은 클래스를 사용함.
+    - 클래스 이름이 같더라도, 해당 클래스 내용이 변경된 경우에는 역직렬화 실패.
+    - 이와 같은 변경사항을 알려주기 위해 사용하는 시리얼 코드
+    - 만약 변경사항이 있으면 해당 시리얼 코드를 명시적으로 선언해줘야한다.
+
+    

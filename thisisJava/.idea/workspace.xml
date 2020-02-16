@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cd04a60-7866-449a-8bce-953e8e62e648" name="Default Changelist" comment="" />
+    <list default="true" id="5cd04a60-7866-449a-8bce-953e8e62e648" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.java-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JavaFXApplication" />
       </list>
     </option>
   </component>
@@ -50,10 +61,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -163,6 +174,7 @@
       <workItem from="1581478416718" duration="1436000" />
       <workItem from="1581558535077" duration="320000" />
       <workItem from="1581559822988" duration="2183000" />
+      <workItem from="1581845888132" duration="1630000" />
     </task>
     <servers />
   </component>
@@ -173,22 +185,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="640" y="127" key="#Project_Structure" timestamp="1581385391285">
+    <state x="640" y="127" key="#Project_Structure" timestamp="1581847378921">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="640" y="127" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1581385391285" />
+    <state x="640" y="127" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1581847378921" />
     <state x="640" y="129" key="#Template" timestamp="1581475488894">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="640" y="129" key="#Template/0.23.1440.877@0.23.1440.877" timestamp="1581475488894" />
-    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1581475738848">
+    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser" timestamp="1581846273988">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1581475738848" />
+    <state x="893" y="172" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1581846273988" />
     <state x="557" y="62" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1580734305405">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="557" y="62" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.877@0.23.1440.877" timestamp="1580734305405" />
+    <state x="598" y="388" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1581846222000">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="598" y="388" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1440.877@0.23.1440.877" timestamp="1581846222000" />
     <state width="678" height="387" key="GridCell.Tab.0.bottom" timestamp="1581570622538">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -205,10 +221,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="678" height="387" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1581570622538" />
-    <state x="443" y="100" key="SettingsEditor" timestamp="1581473764333">
+    <state x="443" y="100" key="SettingsEditor" timestamp="1581846760606">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="443" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1581473764333" />
+    <state x="443" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1581846760606" />
     <state x="728" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1581559823996">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
