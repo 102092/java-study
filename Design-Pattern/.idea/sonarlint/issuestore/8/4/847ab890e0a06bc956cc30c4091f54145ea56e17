@@ -1,0 +1,13 @@
+
+Lsquid:S1481	")Remove this unused "str4" local variable.(ºÇÚıÿÿÿÿ8­¤†Ä….
+[squid:S1854"8Remove this useless assignment to local variable "str2".(¢ƒí´ÿÿÿÿÿ8­¤†Ä….
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(èŒÏ&8­¤†Ä….
+[squid:S1854"8Remove this useless assignment to local variable "str1".(µôê»üÿÿÿÿ8‚”„Ä….
+Csquid:S2129" Remove this "String" constructor(µôê»üÿÿÿÿ8‚”„Ä….
+Fsquid:S1481")Remove this unused "str3" local variable.(ƒÚú8­¤†Ä….
+Csquid:S2129" Remove this "String" constructor(¢ƒí´ÿÿÿÿÿ8­¤†Ä….
+Lsquid:S1481")Remove this unused "str2" local variable.(¢ƒí´ÿÿÿÿÿ8­¤†Ä….
+Usquid:S1854"8Remove this useless assignment to local variable "str3".(ƒÚú8­¤†Ä….
+[squid:S1854	"8Remove this useless assignment to local variable "str4".(ºÇÚıÿÿÿÿ8­¤†Ä….
+Lsquid:S1481")Remove this unused "str1" local variable.(µôê»üÿÿÿÿ8‚”„Ä….
