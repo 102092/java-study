@@ -15,3 +15,9 @@ K
 src/flyweight/Position.java,2/5/25671bf66690a1acb493ddc2e507f5e54e93139a
 P
  src/flyweight/SpringExample.java,8/4/847ab890e0a06bc956cc30c4091f54145ea56e17
+G
+src/builder/Person.java,1/7/1794205e0db8a4126ba833989a038472baef80eb
+L
+src/builder/TestPattern.java,8/0/80149b39aa86c664a3a01dd280e5605d06a7e664
+N
+src/builder/PersonBuilder.java,8/5/851a3ec04829eed8b23bc02b097008938e0f425a

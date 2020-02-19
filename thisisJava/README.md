@@ -787,3 +787,138 @@ public <T extends Number> int compare(T t1, T t2){
   - `WatchService watchService = FileSystems.getDefault().newWatchService();`
 
   
+
+#### 버퍼
+
+- 읽고 쓰기 가능한 메모리 배열
+
+- NIO는 항상 버퍼를 사용
+
+- 종류는 *저장되는 타입*에 따라, *어떤 메모리를 사용하느냐에 따라*
+
+- Non direct buffer
+  - JVM이 관리하는 heap memory를 사용하는 버퍼
+  - 생성 시간이 빠르지만, 버퍼 크기를 설정할 수 없는 단점이 있음.
+  - 그리고 버퍼 크기도 작고
+  
+- Direct buffer
+  - 운영체제가 관리하는 메모리를 사용하는 버퍼
+  - 생성시간이 느리지만, 대용량 버퍼를 생성할 수 있음.
+  - 생성시간이 느리기 때문에, 한번 생성해놓고 재사용하는 것이 유리
+
+- Buffer 생성
+
+  - Non direct buffer
+
+    ```java
+    ByteBuffer byteBuffer = ByteBuffer.allocate(int capacity)
+    ```
+
+  - 혹은 wrap()을 통해서, 이미 생성된 배열을 버퍼로 생성할 수 도 있음.
+  
+  - Direct buffer
+  
+    ```java
+    ByteBuffer byteBuffer = ByteBuffer.allocateDirect(int capacity)
+    ```
+  
+- ByteOrder
+
+  1. Big endian .. 앞 바이트부터 처리
+  2. Little endian .. 뒤 바이트 부터 처리
+
+- <u>JVM은 무조건 Big endian</u>
+
+
+
+#### 파일 채널
+
+- FileChannel
+
+  - 파일 읽기, 쓰기 가능함.
+  - 버퍼를 이요
+  - muti thread 에서 사용해도 안전.
+  - 메서드는 `open()` 을 통해서 ..
+
+- 파일 쓰기
+
+  ```java
+  int bytesCount = fileChannel.write(ByteBuffer src);
+  ```
+
+- 파일 읽기
+
+  ```java
+  int bytesCount = fileChannel.read(ByteBuffer dst);
+  ```
+
+- 파일 복사
+
+  - `File.copy()`
+
+
+
+### 파일 비동기 채널
+
+- 왜 필요?
+  - 파일 채널의 read(), write() 는 블로킹 됨
+  - 즉 위 메서드 실행 중에는 UI갱신이나, 이벤트 처리를 할 수 없음.
+  - 그래서 위 메서드를 처리할 때는, 별도의 스레드를 통해서 처리하는 것이 필요.
+  - 그렇지만, 파일 수 증가에 따라서 스레드들도 증가하겠지. 그럼 동기 문제 생길 수 있음.
+- `AsychronousFileChannel` 을 통해 문제 해결
+
+
+
+#### TCP 블로킹 채널
+
+- 블로킹, 넌블로킹, 비동기
+
+  - 블로킹 : 연결요청, 연결 수락, 입출력 작업시 블로킹
+  - 넌 블로킹 : 연결요청, 연결 수락, 입출력 작업시 넌블로킹
+
+  - 비동기 : 연결요청, 연결 수락, 입출력 작업시 넌 블로킹, 스레드 풀에서 처리 한 후 콜백 메서드를 호출.
+
+- 병렬 처리의 핵심은 스레드 풀을 사용하는 것.
+
+
+
+#### TCP 넌블로킹 채널
+
+- connet(), read(), accept(), read(), write() 메서드는 블로킹 없이 즉시 **리턴**
+  - 그렇지만 클라이언트 요청이 없는 상태에서 accept()를 실행시키면 바로 null return
+
+- Selector
+  - 채널을 키로 등록, 작업스레드는 해당 키셋에서 하나씩 가져와서 작업을 실행.
+  - 넌 블로킹은 셀렉터를 통해서 만들 수 있군.
+
+
+
+#### TCP 비동기 채널
+
+- connet(), read(), accept(), read(), write() 메서드는 블로킹 없이 즉시 **리턴**
+- 실질적인 입출력 처리는 스레드 풀에서.
+- 작업처리를 완료하면, 콜백 메서드 호출
+- 콜백? completed() 
+  - 어디서 호출함? 
+  - 스레드풀의 작업 스레드 풀에서
+
+- 비동기 채널 그룹을 생성할 수 있음.
+  - shutdown() 은 종료하겠다는 의사만 전달.
+  - 바로 종료되진 않음.
+  - 비동기 채널 그룹에, 있던 채널들이 모두 닫히면, 그제서야 해당 그룹이 닫힘
+  - 다만 shutdownNow() 강제종료
+    - 다만 콜백 메서드를 실행하고 있는 채널은 그대로 실행됨.
+
+
+
+#### UDP 채널
+
+- DatagramChannel
+
+- 블로킹, 넌 블로킹 방식 모두 사용가능
+
+  ```java
+  DatagramChannel datagramChannel = DatagramChannel.open(StandardProtocoolFamily.INET);
+  ```
+
+  - 매개인자는 Iv4(INET) or Iv6
