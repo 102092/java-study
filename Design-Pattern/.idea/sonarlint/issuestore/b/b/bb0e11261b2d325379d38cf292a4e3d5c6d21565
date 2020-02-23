@@ -1,0 +1,12 @@
+
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8ö„Ü‡‡.
+Ksquid:S1481"-Remove this unused "myClassA" local variable.(È«˜ª8ñ¨×‡‡.
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(žòØËûÿÿÿÿ8÷‡Û‡‡.
+Ysquid:S1854"<Remove this useless assignment to local variable "myClassB".(©Ý¯e8ñ¨×‡‡.
+V
+squid:S106
+"9Replace this use of System.out or System.err by a logger.(Å¿îÕ8ÏåØ‡‡.
+Jsquid:S1481"-Remove this unused "myClassB" local variable.(©Ý¯e8ñ¨×‡‡.
+Zsquid:S1854"<Remove this useless assignment to local variable "myClassA".(È«˜ª8ñ¨×‡‡.
