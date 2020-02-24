@@ -178,3 +178,87 @@ class Member {
   2. Decorator 패턴
 
 - 기존이 존재하던 코드를 변경없이 사용하고 싶을 때 사용하는 패턴
+
+
+
+## 7. Facade-Pattern
+
+- adapter-pattern과 거의 같은 방식, 그렇지만 **다른 목적**
+- 어댑터 패턴은 , 원래 코드를 다른 코드와 작동할 수 있도록 만들어주는 래퍼를 제공하지만,
+- 파사드 패턴은 원래 코드를 더 쉽게 처리할 수 있도록 하는 래퍼를 제공해줌.
+
+- 왜 사용?
+
+  - 최소 단위로 클래스를 설계할 수 있도록 해줌. == OOP
+
+- 예시
+
+  ```java
+  Computer computer = new Computer();
+  Light light = new Light();
+  Radio radio = new Radio();
+  
+  //이전에는 각각 객체에 모두 접근하여 off메서드를 실행시켜줘야했다면
+  computer.turnOff();
+  light.turnOff();
+  radio.turnOff();
+  
+  //파사드 패턴을 적용하면, 좀 더 쉽게 적용시켜준다.
+  HomeFacade home = new HomeFacade(Computer, light, radio);
+  home.homeIn();
+  ```
+
+  
+
+
+
+## 8. Decorator-Pattern
+
+- 객체의 결합을 통해 기능을 동적으로 유연하게 확장해주도록 도와주는 패턴
+
+- 예시 : 자바 입출력 필터 스트림
+
+  ```java
+  BufferedReader br = null;
+  try {
+    br = new BufferedReader(new FileReader(new File("test.txt"))); //이부분
+  } catch (Exception e) {}
+  ```
+
+- 단점은?
+
+  - *자잘한 객체들이 너무 많이 추가*될 수도 있고,
+  - 코드들이 *필요 이상으로 복잡*해줄 수 있음.
+
+- 추상클래스를 이용
+
+- 약간 Spring DI느낌?
+
+- 예시
+
+  ```java
+  Student g1 = new AmericanStudent();
+  System.out.println(g1.getDescription); // American Student
+  
+  Science g2 = new Science(g1);
+  System.out.println(g2.getDescription);// American Student + Like Science
+  
+  Art g3 = new Art(g2);
+  System.out.prinln(g3.getDescription); // American Student + Like Science + Like Art
+  ```
+
+  
+
+## 9. Bridge-Pattern
+
+- 이해가 필요
+  1. 기능 클래스 계층 : 새로운 기능을 추가하고 싶은 경우
+  2. 구현 클래스 계층 : 새로운 구현을 추가하고 싶은 경우
+- 아래 코드를 보면 이해가 빠를 듯.
+
+- 인터페이스에 추가된 추상메서드는 반드시 구현 클래스에서 재정의 되어야 함.
+- 기능을 추가하기 위해서는 인터페이스에서 추가해야함.
+
+- 브릿지, 다리 역할 누구의?
+  - 기능 계층과 구현의 계층을 연결
+- 단점은 디자인이 복잡. 객체간 연결과정을 파악하기가 힘들 수도 있음.
