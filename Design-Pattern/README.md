@@ -262,3 +262,40 @@ class Member {
 - 브릿지, 다리 역할 누구의?
   - 기능 계층과 구현의 계층을 연결
 - 단점은 디자인이 복잡. 객체간 연결과정을 파악하기가 힘들 수도 있음.
+
+
+
+## 10. Strategy-Pattern
+
+```java
+public class AObj {
+  
+  BInterface binterface;
+  
+  public AObj() {
+		binterface = new BImplement();
+  }
+  
+  public void someFunc(){
+//    System.out.println("AAA");
+    binterface.funcA();
+    binterface.funcA();// 기능 구현을 위임함. 어디에? B 인터페이스에
+  }
+}
+
+public interface BInterface {
+	void funcA();
+}
+
+public class BImplement implemets BInterface {
+  
+  @Override
+  public void funcA() {
+    System.out.println("AAA");
+  }
+}
+```
+
+- 기능 위임
+
+- 하나의 인터페이스, 여러개의 선택사항이 있고, 어떠한 조건에 의해서 하나를 선택하여 실행하게 만드는 패턴인듯?
