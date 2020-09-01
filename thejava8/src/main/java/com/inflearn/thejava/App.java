@@ -3,7 +3,6 @@ package com.inflearn.thejava;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 public class App {
 
@@ -15,10 +14,16 @@ public class App {
     springClasses.add(new OnlineClass(4, "spring core", false));
     springClasses.add(new OnlineClass(5, "rest api development", false));
 
-    OnlineClass spring_boot = new OnlineClass(1, "spring boot", true);
-    Optional<Progress> progress = spring_boot.getProgress();
+    Optional<OnlineClass> spring = springClasses.stream()
+        .filter(oc -> oc.getTitle().startsWith("spring")).findFirst();
 
-    OptionalInt optionalInt = OptionalInt.of(10);
-    System.out.println(optionalInt.getAsInt());
+    Optional<Progress> progress = spring.flatMap(OnlineClass::getProgress);
+    System.out.println(progress.isEmpty());
+
+  }
+
+  private static OnlineClass createNewClass() {
+    System.out.println("creating new class...");
+    return new OnlineClass(10, "New Class", false);
   }
 }
