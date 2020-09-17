@@ -1,18 +1,31 @@
 package com.inflearn.thejava;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.*;
 
 public class App {
 
-    public static void main(String[] args) {
-        ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-        executorService.scheduleAtFixedRate(getRunner("apple"), 1,2, TimeUnit.SECONDS);
-//        executorService.shutdown();
-    }
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        ExecutorService executorService = Executors.newFixedThreadPool(3);
 
-    private static Runnable getRunner(String apple) {
-        return () -> System.out.println(apple + ": " + Thread.currentThread().getName());
+        Callable<String> hello = () -> {
+            Thread.sleep(2000L);
+            return "hello";
+        };
+
+        Callable<String> java = () -> {
+            Thread.sleep(3000L);
+            return "java";
+        };
+
+        Callable<String> keesun = () -> {
+            Thread.sleep(1000L);
+            return "keesun";
+        };
+
+        String s = executorService.invokeAny(Arrays.asList(hello, java, keesun)); //blocking call, 바로 결과가 나옴.
+        System.out.println(s);
+        executorService.shutdown();
     }
 }
