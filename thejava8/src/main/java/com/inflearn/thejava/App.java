@@ -6,12 +6,22 @@ import java.util.concurrent.ExecutionException;
 public class App {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        CompletableFuture<Void> future = CompletableFuture.supplyAsync(() -> {
+        boolean throwError = true;
+
+        CompletableFuture<String> hello = CompletableFuture.supplyAsync(() -> {
+            if (throwError) {
+                throw new IllegalArgumentException();
+            }
             System.out.println("Hello " + Thread.currentThread().getName());
             return "Hello";
-        }).thenRun(() -> {
-            System.out.println(Thread.currentThread().getName()); //Runnable
+        }).handle((result, ex) -> {
+            if (ex != null) {
+                System.out.println(ex);
+                return "Error";
+            }
+            return result;
         });
-        future.get();
+
+        System.out.println(hello.get());
     }
 }
