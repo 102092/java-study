@@ -13,3 +13,6 @@
 - [2. 인터페이스의 변화](https://github.com/102092/java-study/blob/master/thejava8/docs/2.%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%9D%98-%EB%B3%80%ED%99%94.md)
 - [3. Stream](https://github.com/102092/java-study/blob/master/thejava8/docs/3.%20Stream.md)
 - [4. Optional](https://github.com/102092/java-study/blob/master/thejava8/docs/4.%20Optional.md)
+- [5. Date-Time](https://github.com/102092/java-study/blob/master/thejava8/docs/5.%20Data-Time.md)
+- [6. CompletableFuture](https://github.com/102092/java-study/blob/master/thejava8/docs/6.%20CompletableFuture.md)
+- [7. ETC](https://github.com/102092/java-study/blob/master/thejava8/docs/7.%20ETC.md)
